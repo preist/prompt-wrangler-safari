@@ -1,0 +1,11 @@
+title: Prompt Wrangler
+description: Chrome extension that detects and anonymizes sensitive data in AI chat prompts
+author: Igor Putina
+email: igorputina@hey.com
+
+# GitHub Pages settings
+baseurl: "/prompt-wrangler"
+url: "https://preist.github.io"
+
+# Build settings
+markdown: kramdown
