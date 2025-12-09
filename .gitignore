@@ -6,12 +6,12 @@ DerivedData/
 xcuserdata/
 
 # Node artifacts
-ui/node_modules/
-ui/.npm/
-ui/.pnpm-store/
-ui/.yarn/
+extension/node_modules/
+extension/.npm/
+extension/.pnpm-store/
+extension/.yarn/
 
 # Build outputs
-ui/dist/
-ui/coverage/
+extension/dist/
+extension/coverage/
 Prompt Wrangler Extension/Resources/popup-dist/
