@@ -1,0 +1,16 @@
+# macOS clutter
+.DS_Store
+
+# Xcode / derived data
+DerivedData/
+xcuserdata/
+
+# Node artifacts
+ui/node_modules/
+ui/.npm/
+ui/.pnpm-store/
+ui/.yarn/
+
+# Build outputs
+ui/dist/
+Prompt Wrangler Extension/Resources/popup-dist/

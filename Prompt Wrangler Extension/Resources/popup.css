@@ -3,7 +3,8 @@
 }
 
 body {
-    width: 100px;
+    width: 360px;
+    height: 550px;
     padding: 10px;
 
     font-family: system-ui;

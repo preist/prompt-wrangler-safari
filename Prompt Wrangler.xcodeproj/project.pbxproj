@@ -88,6 +88,7 @@
 			);
 			explicitFolders = (
 				Resources/_locales,
+				Resources/popup-dist,
 				Resources/images,
 			);
 			path = "Prompt Wrangler Extension";
