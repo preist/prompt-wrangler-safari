@@ -77,21 +77,6 @@ chrome.runtime.onMessage.addListener(
           await chrome.action.setBadgeText({ text: count.toString() });
           await chrome.action.setBadgeBackgroundColor({ color: '#DC2626' });
 
-          // Show OS notification
-          const itemText = count === 1 ? 'item' : 'items';
-          try {
-            await chrome.notifications.create('prompt-wrangler-alert', {
-              type: 'basic',
-              iconUrl: 'icons/icon-128.png',
-              title: 'Sensitive Data Detected',
-              message: `${count.toString()} ${itemText} detected and anonymized`,
-              priority: 2,
-            });
-            console.log('[Prompt Wrangler] Notification created successfully');
-          } catch (notificationError) {
-            console.error('[Prompt Wrangler] Failed to create notification:', notificationError);
-          }
-
           // Try to notify popup if it's open (don't wait for response)
           chrome.runtime.sendMessage(
             {
@@ -116,11 +101,3 @@ chrome.runtime.onMessage.addListener(
     return false;
   }
 );
-
-// Handle notification clicks - open the popup
-chrome.notifications.onClicked.addListener((notificationId) => {
-  if (notificationId === 'prompt-wrangler-alert') {
-    void chrome.action.openPopup();
-    console.log('[Prompt Wrangler] Notification clicked, opening popup');
-  }
-});

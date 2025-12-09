@@ -43,7 +43,7 @@ export default defineConfig({
             input: resolve(__dirname, 'src/extension/background/index.ts'),
             output: {
               entryFileNames: 'background.js',
-              format: 'es',
+              format: 'iife',
               inlineDynamicImports: true,
             },
             preserveEntrySignatures: false,
