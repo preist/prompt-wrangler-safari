@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78E6AF9A2EE87C06008C86BF /* Prompt Wrangler Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 78E6AF992EE87C06008C86BF /* Prompt Wrangler Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E6AF842EE87C06008C86BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E6AF612EE87C05008C86BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E6AF682EE87C05008C86BF;
+			remoteInfo = "Prompt Wrangler";
+		};
+		78E6AF8E2EE87C06008C86BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E6AF612EE87C05008C86BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E6AF682EE87C05008C86BF;
+			remoteInfo = "Prompt Wrangler";
+		};
+		78E6AF9B2EE87C06008C86BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E6AF612EE87C05008C86BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E6AF982EE87C06008C86BF;
+			remoteInfo = "Prompt Wrangler Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78E6AFB82EE87C06008C86BF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				78E6AF9A2EE87C06008C86BF /* Prompt Wrangler Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		78E6AF692EE87C05008C86BF /* Prompt Wrangler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prompt Wrangler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E6AF832EE87C06008C86BF /* Prompt WranglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prompt WranglerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E6AF8D2EE87C06008C86BF /* Prompt WranglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prompt WranglerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E6AF992EE87C06008C86BF /* Prompt Wrangler Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Prompt Wrangler Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		78E6AFB22EE87C06008C86BF /* Exceptions for "Prompt Wrangler Extension" folder in "Prompt Wrangler Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 78E6AF982EE87C06008C86BF /* Prompt Wrangler Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		78E6AF6B2EE87C05008C86BF /* Prompt Wrangler */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Prompt Wrangler";
+			sourceTree = "<group>";
+		};
+		78E6AF862EE87C06008C86BF /* Prompt WranglerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Prompt WranglerTests";
+			sourceTree = "<group>";
+		};
+		78E6AF902EE87C06008C86BF /* Prompt WranglerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Prompt WranglerUITests";
+			sourceTree = "<group>";
+		};
+		78E6AF9D2EE87C06008C86BF /* Prompt Wrangler Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78E6AFB22EE87C06008C86BF /* Exceptions for "Prompt Wrangler Extension" folder in "Prompt Wrangler Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "Prompt Wrangler Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78E6AF662EE87C05008C86BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF802EE87C06008C86BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF8A2EE87C06008C86BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF962EE87C06008C86BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78E6AF602EE87C05008C86BF = {
+			isa = PBXGroup;
+			children = (
+				78E6AF6B2EE87C05008C86BF /* Prompt Wrangler */,
+				78E6AF862EE87C06008C86BF /* Prompt WranglerTests */,
+				78E6AF902EE87C06008C86BF /* Prompt WranglerUITests */,
+				78E6AF9D2EE87C06008C86BF /* Prompt Wrangler Extension */,
+				78E6AF6A2EE87C05008C86BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78E6AF6A2EE87C05008C86BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E6AF692EE87C05008C86BF /* Prompt Wrangler.app */,
+				78E6AF832EE87C06008C86BF /* Prompt WranglerTests.xctest */,
+				78E6AF8D2EE87C06008C86BF /* Prompt WranglerUITests.xctest */,
+				78E6AF992EE87C06008C86BF /* Prompt Wrangler Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78E6AF682EE87C05008C86BF /* Prompt Wrangler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E6AFB92EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt Wrangler" */;
+			buildPhases = (
+				78E6AF652EE87C05008C86BF /* Sources */,
+				78E6AF662EE87C05008C86BF /* Frameworks */,
+				78E6AF672EE87C05008C86BF /* Resources */,
+				78E6AFB82EE87C06008C86BF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E6AF9C2EE87C06008C86BF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				78E6AF6B2EE87C05008C86BF /* Prompt Wrangler */,
+			);
+			name = "Prompt Wrangler";
+			packageProductDependencies = (
+			);
+			productName = "Prompt Wrangler";
+			productReference = 78E6AF692EE87C05008C86BF /* Prompt Wrangler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78E6AF822EE87C06008C86BF /* Prompt WranglerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E6AFBC2EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt WranglerTests" */;
+			buildPhases = (
+				78E6AF7F2EE87C06008C86BF /* Sources */,
+				78E6AF802EE87C06008C86BF /* Frameworks */,
+				78E6AF812EE87C06008C86BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E6AF852EE87C06008C86BF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				78E6AF862EE87C06008C86BF /* Prompt WranglerTests */,
+			);
+			name = "Prompt WranglerTests";
+			packageProductDependencies = (
+			);
+			productName = "Prompt WranglerTests";
+			productReference = 78E6AF832EE87C06008C86BF /* Prompt WranglerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78E6AF8C2EE87C06008C86BF /* Prompt WranglerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E6AFBF2EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt WranglerUITests" */;
+			buildPhases = (
+				78E6AF892EE87C06008C86BF /* Sources */,
+				78E6AF8A2EE87C06008C86BF /* Frameworks */,
+				78E6AF8B2EE87C06008C86BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E6AF8F2EE87C06008C86BF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				78E6AF902EE87C06008C86BF /* Prompt WranglerUITests */,
+			);
+			name = "Prompt WranglerUITests";
+			packageProductDependencies = (
+			);
+			productName = "Prompt WranglerUITests";
+			productReference = 78E6AF8D2EE87C06008C86BF /* Prompt WranglerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		78E6AF982EE87C06008C86BF /* Prompt Wrangler Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E6AFB32EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt Wrangler Extension" */;
+			buildPhases = (
+				78E6AF952EE87C06008C86BF /* Sources */,
+				78E6AF962EE87C06008C86BF /* Frameworks */,
+				78E6AF972EE87C06008C86BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				78E6AF9D2EE87C06008C86BF /* Prompt Wrangler Extension */,
+			);
+			name = "Prompt Wrangler Extension";
+			packageProductDependencies = (
+			);
+			productName = "Prompt Wrangler Extension";
+			productReference = 78E6AF992EE87C06008C86BF /* Prompt Wrangler Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E6AF612EE87C05008C86BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					78E6AF682EE87C05008C86BF = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					78E6AF822EE87C06008C86BF = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 78E6AF682EE87C05008C86BF;
+					};
+					78E6AF8C2EE87C06008C86BF = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 78E6AF682EE87C05008C86BF;
+					};
+					78E6AF982EE87C06008C86BF = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 78E6AF642EE87C05008C86BF /* Build configuration list for PBXProject "Prompt Wrangler" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78E6AF602EE87C05008C86BF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 78E6AF6A2EE87C05008C86BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E6AF682EE87C05008C86BF /* Prompt Wrangler */,
+				78E6AF822EE87C06008C86BF /* Prompt WranglerTests */,
+				78E6AF8C2EE87C06008C86BF /* Prompt WranglerUITests */,
+				78E6AF982EE87C06008C86BF /* Prompt Wrangler Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E6AF672EE87C05008C86BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF812EE87C06008C86BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF8B2EE87C06008C86BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF972EE87C06008C86BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78E6AF652EE87C05008C86BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF7F2EE87C06008C86BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF892EE87C06008C86BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E6AF952EE87C06008C86BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78E6AF852EE87C06008C86BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E6AF682EE87C05008C86BF /* Prompt Wrangler */;
+			targetProxy = 78E6AF842EE87C06008C86BF /* PBXContainerItemProxy */;
+		};
+		78E6AF8F2EE87C06008C86BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E6AF682EE87C05008C86BF /* Prompt Wrangler */;
+			targetProxy = 78E6AF8E2EE87C06008C86BF /* PBXContainerItemProxy */;
+		};
+		78E6AF9C2EE87C06008C86BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E6AF982EE87C06008C86BF /* Prompt Wrangler Extension */;
+			targetProxy = 78E6AF9B2EE87C06008C86BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78E6AFB42EE87C06008C86BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Prompt Wrangler Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Prompt Wrangler Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-Wrangler.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		78E6AFB52EE87C06008C86BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Prompt Wrangler Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Prompt Wrangler Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-Wrangler.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		78E6AFB62EE87C06008C86BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78E6AFB72EE87C06008C86BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		78E6AFBA2EE87C06008C86BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prompt Wrangler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-Wrangler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		78E6AFBB2EE87C06008C86BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prompt Wrangler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-Wrangler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		78E6AFBD2EE87C06008C86BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-WranglerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prompt Wrangler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prompt Wrangler";
+			};
+			name = Debug;
+		};
+		78E6AFBE2EE87C06008C86BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-WranglerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prompt Wrangler.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Prompt Wrangler";
+			};
+			name = Release;
+		};
+		78E6AFC02EE87C06008C86BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-WranglerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Prompt Wrangler";
+			};
+			name = Debug;
+		};
+		78E6AFC12EE87C06008C86BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H99YB4C494;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.igorputina.Prompt-WranglerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Prompt Wrangler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78E6AF642EE87C05008C86BF /* Build configuration list for PBXProject "Prompt Wrangler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E6AFB62EE87C06008C86BF /* Debug */,
+				78E6AFB72EE87C06008C86BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E6AFB32EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt Wrangler Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E6AFB42EE87C06008C86BF /* Debug */,
+				78E6AFB52EE87C06008C86BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E6AFB92EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt Wrangler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E6AFBA2EE87C06008C86BF /* Debug */,
+				78E6AFBB2EE87C06008C86BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E6AFBC2EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt WranglerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E6AFBD2EE87C06008C86BF /* Debug */,
+				78E6AFBE2EE87C06008C86BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E6AFBF2EE87C06008C86BF /* Build configuration list for PBXNativeTarget "Prompt WranglerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E6AFC02EE87C06008C86BF /* Debug */,
+				78E6AFC12EE87C06008C86BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78E6AF612EE87C05008C86BF /* Project object */;
+}
