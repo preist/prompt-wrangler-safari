@@ -13,4 +13,5 @@ ui/.yarn/
 
 # Build outputs
 ui/dist/
+ui/coverage/
 Prompt Wrangler Extension/Resources/popup-dist/

@@ -20,6 +20,12 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@types/*": ["src/types/*"],
+      "@shared/*": ["src/types/*"],
+      "@utils/*": ["src/lib/utils/*"]
+    },
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

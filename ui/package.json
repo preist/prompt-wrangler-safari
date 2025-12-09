@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && BUILD_TARGET=content vite build && BUILD_TARGET=background vite build && BUILD_TARGET=injected vite build",
     "lint": "eslint . && stylelint \"src/**/*.{css,scss}\"",
     "lint:fix": "eslint . --fix && stylelint \"src/**/*.{css,scss}\" --fix",
     "lint:styles": "stylelint \"src/**/*.{css,scss}\"",
