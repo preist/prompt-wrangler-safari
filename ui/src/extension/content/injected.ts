@@ -37,6 +37,7 @@ let enabledDataTypes = {
   ssn: true,
 };
 let allowlist: AllowlistItem[] = [];
+let activeToast: HTMLElement | null = null;
 
 window.addEventListener('prompt-wrangler-mode-change', (event: Event) => {
   const customEvent = event as CustomEvent<{ enabled: boolean }>;
@@ -256,6 +257,69 @@ function scanAndAnonymize(obj: unknown): { anonymized: unknown; issues: Detected
   return { anonymized, issues: allIssues };
 }
 
+function removeToast(): void {
+  activeToast?.parentElement?.removeChild(activeToast);
+  activeToast = null;
+}
+
+function showToast(issues: DetectedIssue[]): void {
+  removeToast();
+
+  const toast = document.createElement('div');
+  toast.style.position = 'fixed';
+  toast.style.right = '16px';
+  toast.style.top = '16px';
+  toast.style.zIndex = '2147483000';
+  toast.style.background = 'var(--pw-toast-bg, #ffffff)';
+  toast.style.color = 'var(--pw-toast-fg, #111827)';
+  toast.style.padding = '12px 14px';
+  toast.style.borderRadius = '10px';
+  toast.style.boxShadow = '0 14px 35px rgba(0, 0, 0, 0.18)';
+  toast.style.maxWidth = '320px';
+  toast.style.fontFamily = 'system-ui, -apple-system, "Segoe UI", sans-serif';
+  toast.style.fontSize = '14px';
+  toast.style.lineHeight = '1.4';
+  toast.style.display = 'grid';
+  toast.style.gridTemplateColumns = '1fr auto';
+  toast.style.gap = '8px';
+
+  const title = document.createElement('div');
+  title.textContent =
+    issues.length === 1
+      ? 'Prompt Wrangler sanitized 1 item'
+      : `Prompt Wrangler sanitized ${String(issues.length)} items`;
+  title.style.fontWeight = '600';
+
+  const detail = document.createElement('div');
+  const sample = issues[0]?.value ?? '';
+  const truncated =
+    typeof sample === 'string' && sample.length > 40 ? `${sample.slice(0, 40)}…` : sample;
+  detail.textContent = `Open the Prompt Wrangler popup for details.${sample ? ` Example: ${truncated}` : ''}`;
+  detail.style.opacity = '0.9';
+
+  const close = document.createElement('button');
+  close.textContent = '×';
+  close.setAttribute('aria-label', 'Close');
+  close.style.background = 'transparent';
+  close.style.border = 'none';
+  close.style.color = 'inherit';
+  close.style.cursor = 'pointer';
+  close.style.fontSize = '16px';
+  close.style.lineHeight = '1';
+  close.style.padding = '0 0 4px 8px';
+
+  close.addEventListener('click', removeToast);
+
+  toast.appendChild(title);
+  toast.appendChild(close);
+  toast.appendChild(detail);
+
+  document.body.appendChild(toast);
+  activeToast = toast;
+
+  window.setTimeout(removeToast, 6000);
+}
+
 window.fetch = async function (input: RequestInfo | URL, init?: RequestInit): Promise<Response> {
   const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
 
@@ -288,6 +352,8 @@ window.fetch = async function (input: RequestInfo | URL, init?: RequestInit): Pr
             detail: { issues },
           })
         );
+
+        showToast(issues);
 
         // Modify request with anonymized payload
         const modifiedInit = {
