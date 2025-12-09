@@ -1,0 +1,76 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "scss/at-import-partial-extension": null,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/at-mixin-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+    "scss/at-function-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*(__[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*)?(--[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*)?$",
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)*$",
+    "color-hex-length": "long",
+    "color-named": "never",
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-no-important": null,
+    "font-family-name-quotes": "always-where-recommended",
+    "function-url-quotes": "always",
+    "max-nesting-depth": 4,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": true,
+    "number-max-precision": 4,
+    "selector-max-compound-selectors": 4,
+    "selector-max-id": 1,
+    "selector-max-specificity": null,
+    "selector-max-type": 3,
+    "selector-max-universal": 1,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class"]
+      }
+    ],
+    "shorthand-property-no-redundant-values": true,
+    "value-keyword-case": "lower",
+    "at-rule-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "selector-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true,
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["stylelint-commands"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"],
+        "ignore": ["after-comment", "inside-single-line-block"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ]
+  },
+  "ignoreFiles": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "coverage/**"
+  ]
+}
