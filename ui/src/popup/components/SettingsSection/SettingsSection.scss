@@ -1,0 +1,27 @@
+@use '../../../styles/variables' as *;
+
+.settings-section {
+  border-bottom: 1px solid $color-border;
+  padding: 16px;
+
+  &:first-child {
+    padding-top: 12px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.settings-section__title {
+  color: $color-text-dark;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.settings-section__description {
+  color: $color-text-muted;
+  font-size: 12px;
+  margin-bottom: 8px;
+}

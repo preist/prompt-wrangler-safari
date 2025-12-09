@@ -1,0 +1,97 @@
+@use '../../../styles/variables' as *;
+@use 'sass:color';
+
+.onboarding-screen {
+  width: 360px;
+}
+
+.onboarding-screen__content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 20px;
+}
+
+.onboarding-screen__cowboy {
+  height: 86px;
+  margin-bottom: 0;
+}
+
+.onboarding-screen__cowboy-image {
+  height: 86px;
+  width: 74px;
+}
+
+.onboarding-screen__card {
+  background-color: $color-light;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  margin-bottom: 20px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.onboarding-screen__title {
+  color: $color-text-dark;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.onboarding-screen__text {
+  color: $color-text;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.onboarding-screen__recommendation {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.onboarding-screen__button {
+  background-color: $color-primary;
+  border: none;
+  border-radius: 32px;
+  color: $color-light;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 14px 40px;
+  transition: background-color 0.2s ease;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    background-color: color.adjust($color-accent, $lightness: -1%);
+  }
+}
+
+.onboarding-screen__link {
+  align-items: center;
+  color: $color-text;
+  display: flex;
+  font-size: 13px;
+  gap: 6px;
+  justify-content: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.onboarding-screen__github-icon {
+  fill: currentcolor;
+  height: 18px;
+  width: 18px;
+}

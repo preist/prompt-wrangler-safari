@@ -1,0 +1,63 @@
+// Colors
+$color-primary: #540907;
+$color-secondary: #ffbf1e;
+$color-accent: #ff5c0a;
+$color-neutral: #e3dcd1;
+$color-light: #fdfcf6;
+$color-white: #ffffff;
+$color-text: #2c1810;
+$color-text-light: #5a4a3d;
+$color-text-muted: #8b7d71;
+$color-text-dark: #1a1a1a;
+$color-success: #2d6a4f;
+$color-error: $color-accent;
+$color-warning: $color-secondary;
+
+// Background colors
+$color-bg-main: #fbfaf2;
+$color-bg-card: #ffffff;
+$color-bg-hover: #f5f5f5;
+
+// Border colors
+$color-border: #e5e5e5;
+$color-border-light: #f0f0f0;
+
+// Toggle colors
+$color-toggle-bg: #e5e5e5;
+$color-toggle-active: #ffb51b;
+$color-toggle-active-hover: #e6a318;
+$color-toggle-hover: #d9d9d9;
+
+// Gray scale
+$color-gray-lightest: #f5f5f5;
+$color-gray-lighter: #e5e5e5;
+$color-gray-light: #cccccc;
+$color-gray: #999999;
+$color-gray-dark: #666666;
+$color-gray-darker: #4a4a4a;
+
+// Typography
+$font-family:
+  -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, sans-serif;
+$font-family-mono: 'SF Mono', monaco, 'Cascadia Code', 'Courier New', monospace;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$line-height: 1.5;
+
+// Layout
+$border-radius: 4px;
+$border-width: 1px;
+$border-color: $color-neutral;
+$shadow-sm: 0 1px 2px rgb(84 9 7 / 10%);
+$shadow: 0 4px 6px rgb(84 9 7 / 15%);
+$transition-speed: 250ms;
+$transition: all $transition-speed ease-in-out;
+
+// Z-Index
+$z-modal-backdrop: 1040;
+$z-modal: 1050;

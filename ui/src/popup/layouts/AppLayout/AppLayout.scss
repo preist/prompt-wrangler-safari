@@ -1,0 +1,29 @@
+@use '../../../styles/variables' as *;
+
+.app {
+  background-color: $color-bg-main;
+  background-image: url('./assets/background.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  position: relative;
+  width: 360px;
+}
+
+.app__protected-mode-toggle {
+  padding-top: 76px;
+}
+
+.app__navigation {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.app__content {
+  flex: 1;
+  overflow: hidden;
+}

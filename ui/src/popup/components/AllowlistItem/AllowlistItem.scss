@@ -1,0 +1,51 @@
+@use '../../../styles/variables' as *;
+
+.allowlist-item {
+  align-items: center;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.allowlist-item__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.allowlist-item__value {
+  color: $color-primary;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.allowlist-item__expiry {
+  color: $color-gray;
+  font-size: 12px;
+}
+
+.allowlist-item__remove {
+  background: none;
+  border: none;
+  color: $color-gray;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-text-dark;
+  }
+}

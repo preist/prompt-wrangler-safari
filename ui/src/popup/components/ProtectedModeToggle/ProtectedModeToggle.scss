@@ -1,0 +1,22 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.protected-mode-toggle {
+  @include panel;
+
+  flex-shrink: 0;
+  margin: 16px 16px 0;
+  padding: 16px;
+  position: relative;
+}
+
+.protected-mode-toggle__illustration {
+  left: 20px;
+  position: absolute;
+  top: -86px;
+}
+
+.protected-mode-toggle__icon {
+  height: 86px;
+  width: 75px;
+}

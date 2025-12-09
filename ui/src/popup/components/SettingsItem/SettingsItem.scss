@@ -1,0 +1,34 @@
+@use '../../../styles/variables' as *;
+
+.settings-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.settings-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.settings-item__title {
+  color: $color-text-dark;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.settings-item__description {
+  color: $color-text-muted;
+  font-size: 12px;
+  line-height: 1.3;
+}

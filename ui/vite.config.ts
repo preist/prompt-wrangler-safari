@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
 import { resolve } from 'path';
 
 const isContentScript = process.env.BUILD_TARGET === 'content';
@@ -13,7 +14,7 @@ const outDir = isExtensionScript
 
 // Build popup, content script, background, and injected script.
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr()],
   base: isExtensionScript ? undefined : './',
   resolve: {
     alias: {
@@ -21,6 +22,7 @@ export default defineConfig({
       '@types': resolve(__dirname, 'src/types'),
       '@shared': resolve(__dirname, 'src/types'),
       '@utils': resolve(__dirname, 'src/lib/utils'),
+      '@popup': resolve(__dirname, 'src/popup'),
     },
   },
   build: {
@@ -41,7 +43,7 @@ export default defineConfig({
             input: resolve(__dirname, 'src/extension/background/index.ts'),
             output: {
               entryFileNames: 'background.js',
-              format: 'iife',
+              format: 'es',
               inlineDynamicImports: true,
             },
             preserveEntrySignatures: false,

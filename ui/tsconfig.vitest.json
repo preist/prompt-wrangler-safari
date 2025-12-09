@@ -24,7 +24,8 @@
       "@lib/*": ["src/lib/*"],
       "@types/*": ["src/types/*"],
       "@shared/*": ["src/types/*"],
-      "@utils/*": ["src/lib/utils/*"]
+      "@utils/*": ["src/lib/utils/*"],
+      "@popup/*": ["src/popup/*"]
     },
     "strict": true,
     "noUnusedLocals": true,

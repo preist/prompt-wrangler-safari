@@ -14,7 +14,7 @@ import {
 
 interface DetectedIssue {
   id: string;
-  type: string;
+  type: 'email' | 'phone' | 'creditCard' | 'ssn';
   value: string;
   timestamp: number;
 }
@@ -26,7 +26,7 @@ interface AllowlistItem {
   addedAt: number;
 }
 
-console.log('[Prompt Wrangler] Injected script (main world) loaded');
+console.log('[Prompt Wrangler][injected] loaded in main world');
 
 const originalFetch = window.fetch;
 let protectedModeEnabled = true;
@@ -41,19 +41,19 @@ let allowlist: AllowlistItem[] = [];
 window.addEventListener('prompt-wrangler-mode-change', (event: Event) => {
   const customEvent = event as CustomEvent<{ enabled: boolean }>;
   protectedModeEnabled = customEvent.detail.enabled;
-  console.log('[Prompt Wrangler] Protected mode changed:', protectedModeEnabled);
+  console.log('[Prompt Wrangler][injected] Protected mode changed:', protectedModeEnabled);
 });
 
 window.addEventListener('prompt-wrangler-data-types-change', (event: Event) => {
   const customEvent = event as CustomEvent<{ dataTypes: Record<string, boolean> }>;
   enabledDataTypes = customEvent.detail.dataTypes as typeof enabledDataTypes;
-  console.log('[Prompt Wrangler] Data types changed:', enabledDataTypes);
+  console.log('[Prompt Wrangler][injected] Data types changed:', enabledDataTypes);
 });
 
 window.addEventListener('prompt-wrangler-allowlist-change', (event: Event) => {
   const customEvent = event as CustomEvent<{ allowlist: AllowlistItem[] }>;
   allowlist = customEvent.detail.allowlist;
-  console.log('[Prompt Wrangler] Allowlist changed:', allowlist);
+  console.log('[Prompt Wrangler][injected] Allowlist changed:', allowlist);
 });
 
 function generateId(): string {
@@ -280,7 +280,7 @@ window.fetch = async function (input: RequestInfo | URL, init?: RequestInit): Pr
       const { anonymized, issues } = scanAndAnonymize(payload);
 
       if (issues.length > 0) {
-        console.log('[Prompt Wrangler] Detected issues:', issues);
+        console.log('[Prompt Wrangler][injected] Detected issues:', issues);
 
         // Send to content script via custom event
         window.dispatchEvent(
@@ -295,6 +295,7 @@ window.fetch = async function (input: RequestInfo | URL, init?: RequestInit): Pr
           body: JSON.stringify(anonymized),
         };
 
+        console.log('[Prompt Wrangler][injected] sending issues event to content script');
         return await originalFetch(input, modifiedInit);
       }
     } catch (error) {
@@ -305,4 +306,4 @@ window.fetch = async function (input: RequestInfo | URL, init?: RequestInit): Pr
   return await originalFetch(input, init);
 };
 
-console.log('[Prompt Wrangler] Fetch override installed');
+console.log('[Prompt Wrangler][injected] Fetch override installed');

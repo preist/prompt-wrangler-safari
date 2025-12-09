@@ -8,6 +8,8 @@ interface StoredIssue {
   batchId: string;
 }
 
+console.log('[Prompt Wrangler][background] loaded');
+
 async function updateIcon() {
   try {
     const result = await chrome.storage.local.get(['settings.protectedMode']);
@@ -36,7 +38,9 @@ chrome.storage.onChanged.addListener((changes, areaName) => {
 void updateIcon();
 
 chrome.runtime.onMessage.addListener(
-  (message: Message, _sender, _sendResponse: (response?: unknown) => void) => {
+  (message: Message, sender, _sendResponse: (response?: unknown) => void) => {
+    console.log('[Prompt Wrangler][background] onMessage', message.type, message, sender);
+
     if (message.type === 'ISSUES_DETECTED') {
       console.log('[Prompt Wrangler] Background received issues:', message.issues);
 

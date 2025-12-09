@@ -1,0 +1,18 @@
+@use 'base';
+
+// Popup styles
+@use '../popup/layouts/AppLayout/AppLayout';
+@use '../popup/layouts/AppLayout/components/Footer';
+@use '../popup/components/Navigation/Navigation';
+@use '../popup/components/Toggle/Toggle';
+@use '../popup/components/ProtectedModeToggle/ProtectedModeToggle';
+@use '../popup/components/IssueIcon/IssueIcon';
+@use '../popup/components/IssueListItem/IssueListItem';
+@use '../popup/components/HistoryItem/HistoryItem';
+@use '../popup/components/AllowlistItem/AllowlistItem';
+@use '../popup/components/SettingsSection/SettingsSection';
+@use '../popup/components/SettingsItem/SettingsItem';
+@use '../popup/components/ScreenContainer/ScreenContainer';
+@use '../popup/components/ScreenEmptyState/ScreenEmptyState';
+@use '../popup/components/ScreenPanel/ScreenPanel';
+@use '../popup/screens/OnboardingScreen/OnboardingScreen';

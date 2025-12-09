@@ -1,0 +1,36 @@
+@use '../../../../styles/variables' as *;
+
+.app__footer {
+  align-items: flex-start;
+  display: flex;
+  justify-content: left;
+  padding: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.app__footer-link {
+  align-items: center;
+  color: $color-text;
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.app__footer-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.app__footer-cactus {
+  bottom: 0;
+  height: 100px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  width: 360px;
+  z-index: 1;
+}

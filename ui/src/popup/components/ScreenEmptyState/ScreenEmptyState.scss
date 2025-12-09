@@ -1,0 +1,26 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.screen-empty-state {
+  @include panel;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 16px;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.screen-empty-state__title {
+  color: $color-text-dark;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.screen-empty-state__description {
+  color: $color-text-muted;
+  font-size: 14px;
+}

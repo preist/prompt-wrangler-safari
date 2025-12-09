@@ -1,0 +1,51 @@
+@use '../../../styles/variables' as *;
+
+.history-item {
+  align-items: center;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.history-item__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.history-item__value {
+  color: $color-primary;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-item__timestamp {
+  color: $color-gray;
+  font-size: 12px;
+}
+
+.history-item__delete {
+  background: none;
+  border: none;
+  color: $color-gray;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-text-dark;
+  }
+}
