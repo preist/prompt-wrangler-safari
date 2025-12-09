@@ -1,12 +1,13 @@
 # Prompt Wrangler Safari Extension
 
-This repo contains the Xcode host app plus a TypeScript/React project under `extension/` that builds the Safari Web Extension.
+This repo contains the Xcode host app plus a TypeScript/React project under `extension/` that builds the Safari Web Extension. A Chrome version is also available (see links below).
 
 ## Structure
 - `Prompt Wrangler Extension/`: Safari Web Extension resources (manifest, scripts, assets).
 - `extension/`: React + TypeScript + Vite project. Builds the popup and extension scripts into `Prompt Wrangler Extension/Resources`.
 - `docs/`: Static site docs.
 - `Prompt Wrangler.xcodeproj`: Xcode project for the macOS host app and extension wrapper.
+- Chrome version (source + site): https://github.com/preist/prompt-wrangler · https://preist.github.io/prompt-wrangler/
 
 ## Building the extension
 1) Install JS deps in `extension/`: `cd extension && npm install`.

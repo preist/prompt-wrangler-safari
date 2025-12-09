@@ -6,8 +6,9 @@ title: Prompt Wrangler
 # Prompt Wrangler
 
 Safari extension that detects and anonymizes sensitive data in AI chat prompts.
+A Chrome version is also [available](https://preist.github.io/prompt-wrangler/).
 
-![Prompt Wrangler preview](preview.gif)
+![Prompt Wrangler preview](preview-safari.gif)
 
 ## What it does
 - Scans your prompts on ChatGPT for sensitive tokens (emails, phone numbers, social security or credit card numbers).
@@ -26,6 +27,7 @@ Safari extension that detects and anonymizes sensitive data in AI chat prompts.
 
 ## Source code
 - Full source is in this repository; build with Xcode to load the Safari extension.
+- Chrome version (source + site): https://github.com/preist/prompt-wrangler · https://preist.github.io/prompt-wrangler/
 
 ## Safari-specific notes
 - Safari does not support the `chrome.notifications` API, so system notifications are not shown; the extension uses in-page toasts and the toolbar badge instead.
